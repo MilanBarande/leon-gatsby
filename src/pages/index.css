@@ -1,0 +1,64 @@
+/* .album-cover {
+  background-image: url("../images/album-cover.jpg");
+  max-width: 720px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  height: 60vh;
+}
+
+@media only screen and (min-width: 630px) {
+  .album-cover {
+    background-size: cover;
+    height: 90vh;
+  }
+} */
+
+body {
+  font-family: 'Anton', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-list {
+  list-style: none;
+  margin-left: 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .link-list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12px;
+  }
+}
+
+.list-item {
+  margin: 25px 0;
+}
+
+.link {
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+#album-cover {
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 800px) {
+  #album-cover {
+    width: 70%;
+  }
+}

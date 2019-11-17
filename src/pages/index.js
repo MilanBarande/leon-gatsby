@@ -1,20 +1,42 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import './index.css'
+import albumCover from '../images/album-cover.jpg'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <img src={albumCover} alt="album-cover" id="album-cover" />
+    <ul className="link-list">
+      <li className="list-item">
+        <Link className="link" to="/video/">
+          Video
+        </Link>
+      </li>
+      <li className="list-item">
+        <Link className="link" to="/listen/">
+          Listen
+        </Link>
+      </li>
+      <li className="list-item">
+        <Link className="link" to="/gallery/">
+          Gallery
+        </Link>
+      </li>
+      <li className="list-item">
+        <Link className="link" to="/about/">
+          About
+        </Link>
+      </li>
+      <li className="list-item">
+        <Link className="link" to="/shows/">
+          Shows
+        </Link>
+      </li>
+    </ul>
   </Layout>
 )
 
