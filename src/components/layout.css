@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+
 main {
   display: flex;
   flex-direction: column;
@@ -5,7 +7,7 @@ main {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Anton", sans-serif !important;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -14,7 +16,6 @@ body {
   background-color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Anton", sans-serif;
 }
 article,
 aside,
