@@ -1,5 +1,24 @@
 .link-list-container {
-  width: 70%;
+  position: absolute;
+  bottom: 0;
+}
+
+@media only screen and (min-width: 800px) {
+  .link-list-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .link-list-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .link-list-container {
+    width: 70%;
+  }
 }
 
 .link-list {
