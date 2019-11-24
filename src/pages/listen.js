@@ -3,7 +3,7 @@ import LinkList from "../components/linklist"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import "./index.css"
+import "./listen.css"
 
 const ListenPage = () => (
   <Layout>
