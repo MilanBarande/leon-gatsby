@@ -4,9 +4,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./index.css"
 
-const VideoPage = () => (
+const ShowsPage = () => (
   <Layout>
-    <SEO title="Video" />
+    <SEO title="Shows" />
     <ul className="link-list">
       <li className="list-item">
         <Link className="link" to="/video/">
@@ -24,17 +24,17 @@ const VideoPage = () => (
         </Link>
       </li>
       <li className="list-item">
-        <Link className="link" to="/shows/">
-          Shows
+        <Link className="link" to="/about/">
+          About
         </Link>
       </li>
       <li className="list-item">
-        <Link className="link" to="/about/">
-          About
+        <Link className="link" to="/shows/">
+          Shows
         </Link>
       </li>
     </ul>
   </Layout>
 )
 
-export default VideoPage
+export default ShowsPage

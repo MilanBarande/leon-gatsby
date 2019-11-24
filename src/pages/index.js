@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react"
+import { Link } from "gatsby"
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import './index.css'
-import albumCover from '../images/album-cover.jpg'
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import "./index.css"
+import albumCover from "../images/album-cover.jpg"
 
 const IndexPage = () => (
   <Layout>
@@ -27,13 +27,13 @@ const IndexPage = () => (
         </Link>
       </li>
       <li className="list-item">
-        <Link className="link" to="/about/">
-          About
+        <Link className="link" to="/shows/">
+          Shows
         </Link>
       </li>
       <li className="list-item">
-        <Link className="link" to="/shows/">
-          Shows
+        <Link className="link" to="/about/">
+          About
         </Link>
       </li>
     </ul>
