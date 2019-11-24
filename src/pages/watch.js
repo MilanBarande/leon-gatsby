@@ -3,11 +3,11 @@ import Layout from "../components/layout"
 import LinkList from "../components/linklist"
 import SEO from "../components/seo"
 
-import "./index.css"
+import "./watch.css"
 
-const VideoPage = () => (
+const WatchPage = () => (
   <Layout>
-    <SEO title="Video" />
+    <SEO title="Watch" />
     <iframe
       height="320"
       src="https://www.youtube.com/embed/poMpkA6IKl4"
@@ -19,4 +19,4 @@ const VideoPage = () => (
   </Layout>
 )
 
-export default VideoPage
+export default WatchPage

@@ -1,3 +1,9 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -8,6 +14,7 @@ body {
   background-color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Anton", sans-serif;
 }
 article,
 aside,
@@ -16,7 +23,6 @@ figcaption,
 figure,
 footer,
 header,
-main,
 menu,
 nav,
 section,
@@ -201,7 +207,6 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

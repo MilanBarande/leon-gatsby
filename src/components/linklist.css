@@ -1,3 +1,9 @@
+.link-list-container {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+}
+
 .link-list {
   list-style: none;
   margin-left: 0;
