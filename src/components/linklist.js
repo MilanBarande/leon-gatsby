@@ -1,34 +1,27 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from "./link"
 import "./linklist.css"
 
 export default () => (
   <div className="link-list-container">
     <ul className="link-list">
       <li className="list-item">
-        <Link className="link" to="/watch/">
-          Watch
-        </Link>
+        <Link url="/watch" title="Watch" />
       </li>
       <li className="list-item">
-        <Link className="link" to="/listen/">
-          Listen
-        </Link>
+        <Link url="/listen" title="Listen" />
       </li>
       <li className="list-item">
-        <Link className="link" to="/gallery/">
-          Gallery
-        </Link>
+        <Link url="/gallery" title="Gallery" />
       </li>
       <li className="list-item">
-        <Link className="link" to="/shows/">
-          Shows
-        </Link>
+        <Link url="/shows" title="Shows" />
       </li>
       <li className="list-item">
-        <Link className="link" to="/about/">
-          About
-        </Link>
+        <Link url="/about" title="About" />
+      </li>
+      <li className="list-item">
+        <Link url="/buy" title="Buy" />
       </li>
     </ul>
   </div>

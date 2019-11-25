@@ -10,6 +10,7 @@ const WatchPage = () => (
     <SEO title="Watch" />
     <div className="video-container">
       <iframe
+        title="clips"
         width="560"
         height="315"
         src="https://www.youtube.com/embed/poMpkA6IKl4"

@@ -8,6 +8,13 @@ import "./shows.css"
 const ShowsPage = () => (
   <Layout>
     <SEO title="Shows" />
+    <div className="live picture">
+      <div
+        id="seated-55fdf2c0"
+        data-artist-id="73a78696-8ebd-4123-a098-1f500f93427d"
+        data-css-version="2"
+      />
+    </div>
     <LinkList />
   </Layout>
 )
