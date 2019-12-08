@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React, { Component } from "react"
+import "./link.css"
 
 const colors = [
   "#69ff18",
@@ -32,12 +33,12 @@ class FunkyLink extends Component {
   }
 
   render() {
-    const { url, title } = this.props
+    const { url, title, className } = this.props
     const { color } = this.state
     return (
       <Link
         to={url}
-        className="link"
+        className={`link ${className}`}
         style={{ color }}
         onMouseOver={this.spinTheColorWheel}
         onMouseLeave={this.stopTheWheel}

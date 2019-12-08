@@ -37,21 +37,3 @@
 .list-item {
   margin: 13px 0;
 }
-
-.link {
-  font-size: 25px;
-  text-transform: uppercase;
-  letter-spacing: 12px;
-  color: white;
-  text-decoration: none;
-}
-
-@media only screen and (max-width: 800px) {
-  .link {
-    font-size: 22px;
-  }
-}
-
-.link:hover {
-  cursor: pointer;
-}
