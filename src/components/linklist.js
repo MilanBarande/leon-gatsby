@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "./link"
-import "./linklist.css"
+import "./linklist.scss"
 
 export default () => (
   <div className="link-list-container">

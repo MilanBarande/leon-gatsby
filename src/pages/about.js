@@ -3,7 +3,7 @@ import LinkList from "../components/linklist"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import "./about.css"
+import "./about.scss"
 
 const bio = {
   french:
@@ -17,7 +17,7 @@ const AboutPage = () => {
   const toggleLanguage = () =>
     language === "english" ? setLanguage("french") : setLanguage("english")
   return (
-    <Layout>
+    <Layout className="about">
       <SEO title="About" />
       <div className="about-text">{bio[language]}</div>
       <div className="toggle-language-button" onClick={toggleLanguage}>

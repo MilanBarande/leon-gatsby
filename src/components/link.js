@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React, { Component } from "react"
-import "./link.css"
+import "./link.scss"
 
 const colors = [
   "#69ff18",

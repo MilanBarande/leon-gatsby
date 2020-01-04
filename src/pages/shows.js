@@ -3,10 +3,10 @@ import LinkList from "../components/linklist"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import "./shows.css"
+import "./shows.scss"
 
 const ShowsPage = () => (
-  <Layout>
+  <Layout className="shows">
     <SEO title="Shows" />
     <div className="live picture">
       <div

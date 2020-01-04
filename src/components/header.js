@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import Link from "./link"
-import "./link.css"
+import "./link.scss"
 
 const Header = () => (
   <header

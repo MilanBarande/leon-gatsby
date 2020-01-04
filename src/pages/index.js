@@ -3,11 +3,11 @@ import LinkList from "../components/linklist"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import "./index.css"
+import "./index.scss"
 import albumCover from "../images/album-cover.jpg"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout className="home">
     <SEO title="Home" />
     <img src={albumCover} alt="album-cover" id="album-cover" />
     <LinkList />

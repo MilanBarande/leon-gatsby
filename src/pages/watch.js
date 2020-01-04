@@ -3,10 +3,10 @@ import Layout from "../components/layout"
 import LinkList from "../components/linklist"
 import SEO from "../components/seo"
 
-import "./watch.css"
+import "./watch.scss"
 
 const WatchPage = () => (
-  <Layout>
+  <Layout className="watch">
     <SEO title="Watch" />
     <div className="video-container">
       <iframe

@@ -3,10 +3,10 @@ import LinkList from "../components/linklist"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import "./listen.css"
+import "./listen.scss"
 
 const ListenPage = () => (
-  <Layout>
+  <Layout className="listen">
     <SEO title="Listen" />
     <iframe
       width="80%"
