@@ -2,8 +2,27 @@
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-height: 800px) {
+  #album-cover {
+    height: 60vh;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  #album-cover {
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  #album-cover {
+    height: 45vh;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-height: 1000px) {
   #album-cover {
     width: 70%;
+    height: 80vh;
   }
 }
