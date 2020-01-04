@@ -5,3 +5,12 @@
  */
 
 // You can delete this file if you're not using it
+
+const React = require("react")
+
+exports.onRenderBody = ({ setPostBodyComponents }) => {
+  setPostBodyComponents([
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>,
+    <script src="https://widget.seated.com/app.js"></script>,
+  ])
+}
