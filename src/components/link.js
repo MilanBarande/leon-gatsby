@@ -20,16 +20,19 @@ class FunkyLink extends Component {
   }
 
   spinTheColorWheel = () => {
-    const that = this
-    this.interval = setInterval(function() {
+    this.interval = setInterval(() => {
       const newColor = colors[Math.floor(Math.random() * colors.length)]
-      that.setState({ color: newColor })
+      this.setState({ color: newColor })
     }, 100)
   }
 
   stopTheWheel = () => {
     clearInterval(this.interval)
     return this.setState({ color: "white" })
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval)
   }
 
   render() {
