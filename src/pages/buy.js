@@ -8,6 +8,13 @@ import "./buy.scss"
 const BuyPage = () => (
   <Layout>
     <SEO title="Buy" />
+    <div className="coming-soon">
+      <h1>
+        COMING
+        <br />
+        SOON
+      </h1>
+    </div>
     <LinkList />
   </Layout>
 )
