@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 import "./shows.scss"
 
-const ShowsPage = () => (
+const ShowsPage = ({ path }) => (
   <Layout className="shows">
     <SEO title="Shows" />
     <div className="live picture">
@@ -15,7 +15,7 @@ const ShowsPage = () => (
         data-css-version="2"
       />
     </div>
-    <LinkList />
+    <LinkList path={path} />
   </Layout>
 )
 

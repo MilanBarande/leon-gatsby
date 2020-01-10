@@ -12,7 +12,7 @@ const bio = {
     "Singer/Songwritter, Dancer and Performer, Léon creates Electronic/Pop music with influences from 80's-New Wave, Jazz and Techno aesthetics. The young artist graduated with a Dance and Choreographic Bachelor at the infamous Folkwang University in Essen Germany and is now based in Berlin. Live - Léon plays solo, an interdisciplinary concert incorporating singing, electro music, dance, cabaret and theatrical elements that will invite you to trust in what you stand for - BE YOURSELF and do not wait for anyones approval.",
 }
 
-const AboutPage = () => {
+const AboutPage = ({ path }) => {
   const [language, setLanguage] = useState("english")
   const toggleLanguage = () =>
     language === "english" ? setLanguage("french") : setLanguage("english")
@@ -23,7 +23,7 @@ const AboutPage = () => {
       <div className="toggle-language-button" onClick={toggleLanguage}>
         {language === "english" ? "🇫🇷" : "🇬🇧 🇺🇸"}
       </div>
-      <LinkList />
+      <LinkList path={path} />
     </Layout>
   )
 }
