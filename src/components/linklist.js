@@ -29,15 +29,13 @@ const pages = [
   },
 ]
 
-const trimLastChar = string => string.slice(0, -1)
-
-export default ({ path }) => (
+export default ({ uri }) => (
   <div className="link-list-container">
     <ul className="link-list">
       {pages.map(
         ({ url, title }) =>
-          trimLastChar(path) !== url && (
-            <li className="list-item">
+          uri !== url && (
+            <li className="list-item" key={title}>
               <Link url={url} title={title} />
             </li>
           )

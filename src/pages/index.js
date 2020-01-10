@@ -6,11 +6,11 @@ import SEO from "../components/seo"
 import "./index.scss"
 import albumCover from "../images/album-cover.jpg"
 
-const IndexPage = ({ path }) => (
+const IndexPage = () => (
   <Layout className="home">
     <SEO title="Home" />
     <img src={albumCover} alt="album-cover" id="album-cover" />
-    <LinkList path={path} />
+    <LinkList />
   </Layout>
 )
 

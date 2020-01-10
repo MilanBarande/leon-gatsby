@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 import "./watch.scss"
 
-const WatchPage = ({ path }) => (
+const WatchPage = ({ uri }) => (
   <Layout className="watch">
     <SEO title="Watch" />
     <div className="video-container">
@@ -19,7 +19,7 @@ const WatchPage = ({ path }) => (
         allowFullScreen
       />
     </div>
-    <LinkList path={path} />
+    <LinkList uri={uri} />
   </Layout>
 )
 

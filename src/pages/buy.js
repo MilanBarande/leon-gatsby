@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 import "./buy.scss"
 
-const BuyPage = ({ path }) => (
+const BuyPage = ({ uri }) => (
   <Layout>
     <SEO title="Buy" />
     <div className="coming-soon">
@@ -15,7 +15,7 @@ const BuyPage = ({ path }) => (
         SOON
       </h1>
     </div>
-    <LinkList path={path} />
+    <LinkList uri={uri} />
   </Layout>
 )
 
