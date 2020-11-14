@@ -1,14 +1,14 @@
-import React, { useState } from "react"
+import "./listen.scss"
+import React from "react"
 import LinkList from "../components/linklist"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-import "./listen.scss"
 
 const ListenPage = ({ uri }) => (
   <Layout className="listen">
     <SEO title="Listen" />
     <iframe
+      title="soundcloud-iframe"
       width="80%"
       height="600"
       scrolling="no"
