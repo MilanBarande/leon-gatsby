@@ -13,7 +13,7 @@ const WatchPage = ({ uri }) => (
         title="clips"
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/pcNzLmFZZnE"
+        src="https://www.youtube.com/embed/CJ3_2OJnbHM"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
         allowFullScreen
