@@ -2,6 +2,11 @@
   margin: 0 auto;
 }
 
+@font-face {
+  font-family: 'Futura italic';
+  src: url('../fonts/Futura\ Italic.ttf')
+}
+
 @media only screen and (min-height: 800px) {
   #album-cover {
     height: 60vh;

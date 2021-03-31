@@ -9,20 +9,20 @@ const bio = {
   french:
     "Léon c’est l’artiste complet, le touche à tout de talent, musicien, chanteur, danseur, perfomer… son concert « project yourself » est une véritable pépite à 360°. Sa voix, sa présence scénique, sa musique, son énergie rythmique électrisent. Aujourd’hui basé à Berlin, ce grand créatif propose une électro-pop qui puise ses influences dans la new wave, le jazz et la techno. Le voir en concert c’est plonger dans un véritable univers pop, élégant, incarné et singulier… une véritable expérience live.",
   english:
-    "Singer/Songwritter, Dancer and Performer, Léon creates Electronic/Pop music with influences from 80's-New Wave, Jazz and Techno aesthetics. The young artist graduated with a Dance and Choreographic Bachelor at the infamous Folkwang University in Essen Germany and is now based in Berlin. Live - Léon plays solo, an interdisciplinary concert incorporating singing, electro music, dance, cabaret and theatrical elements that will invite you to trust in what you stand for - BE YOURSELF and do not wait for anyones approval.",
+    "Léon the Singer is the total package: singer, songwriter, musician and dancer. He is the quintessential millenial pop artist, with music and performances that are setting a new standard for the contemporary pop scene. His sound could be considered the love child of a threesome between Madonna, James Blake and David Bowie; and his songwriting refects on his experience as a queer artist seeking a sense of identity, self- empowerment and intimacy. In addition to being a self-taught, multi - talented musician, Léon is a trained dancer and pulls infuences from European contemporary dance choreographers such as Dimitris Papaioannou and Pina Bausch, which creates a unique performance aesthetic that is unprecedented in this feld.Léon The Singer is defnitely the artist you want to keep on your radar. In 2021, Léon comes back with a brilliant new project: 'The Noise Beside Your Thoughts'",
 }
 
 const AboutPage = ({ uri }) => {
-  const [language, setLanguage] = useState("english")
-  const toggleLanguage = () =>
-    language === "english" ? setLanguage("french") : setLanguage("english")
+  // const [language, setLanguage] = useState("english")
+  // const toggleLanguage = () =>
+  //   language === "english" ? setLanguage("french") : setLanguage("english")
   return (
     <Layout className="about">
       <SEO title="About" />
-      <div className="about-text">{bio[language]}</div>
-      <div className="toggle-language-button" onClick={toggleLanguage}>
+      <div className="about-text">{bio.english}</div>
+      {/* <div className="toggle-language-button" onClick={toggleLanguage}>
         {language === "english" ? "🇫🇷" : "🇬🇧 🇺🇸"}
-      </div>
+      </div> */}
       <LinkList uri={uri} />
     </Layout>
   )
