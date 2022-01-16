@@ -24,8 +24,9 @@ const pages = [
     title: "About",
   },
   {
-    url: "/buy",
+    url: "https://leonthesinger.bandcamp.com",
     title: "Buy",
+    isExternal: true
   },
 ]
 
@@ -33,10 +34,10 @@ export default ({ uri }) => (
   <div className="link-list-container">
     <ul className="link-list">
       {pages.map(
-        ({ url, title }) =>
+        ({ url, title, isExternal }) =>
           uri !== url && (
             <li className="list-item" key={title}>
-              <Link url={url} title={title} />
+              <Link url={url} title={title} isExternal={isExternal} />
             </li>
           )
       )}

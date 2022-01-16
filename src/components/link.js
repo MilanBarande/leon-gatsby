@@ -36,19 +36,25 @@ class FunkyLink extends Component {
   }
 
   render() {
-    const { url, title, className } = this.props
+    const { url, title, className, isExternal } = this.props
     const { color } = this.state
-    return (
-      <Link
-        to={url}
-        className={`link ${className}`}
+    return isExternal ?
+      <a
         style={{ color }}
         onMouseOver={this.spinTheColorWheel}
         onMouseLeave={this.stopTheWheel}
-      >
-        {title}
-      </Link>
-    )
+        className='link' href="https://leonthesinger.bandcamp.com" target="_blank">{title}</a>
+      : (
+        <Link
+          to={url}
+          className={`link ${className}`}
+          style={{ color }}
+          onMouseOver={this.spinTheColorWheel}
+          onMouseLeave={this.stopTheWheel}
+        >
+          {title}
+        </Link>
+      )
   }
 }
 
