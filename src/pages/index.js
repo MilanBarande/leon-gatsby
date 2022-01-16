@@ -9,7 +9,7 @@ import albumCover from "../images/album-cover.jpeg"
 const IndexPage = () => (
   <Layout className="home">
     <SEO title="Home" />
-    <img src={albumCover} alt="album-cover" id="album-cover" />
+    <a href='https://smarturl.it/LTS_OneNightStand' target='_blank'><img src={albumCover} alt="album-cover" id="album-cover" /></a>
     <LinkList />
   </Layout>
 )
