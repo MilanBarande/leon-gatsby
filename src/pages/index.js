@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import "./index.scss"
-import albumCover from "../images/album-cover.jpg"
+import albumCover from "../images/album-cover.jpeg"
 
 const IndexPage = () => (
   <Layout className="home">
