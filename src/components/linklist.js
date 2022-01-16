@@ -12,10 +12,6 @@ const pages = [
     title: "Listen",
   },
   {
-    url: "/gallery",
-    title: "Gallery",
-  },
-  {
     url: "/shows",
     title: "Shows",
   },
