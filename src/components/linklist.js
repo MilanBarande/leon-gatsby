@@ -4,16 +4,19 @@ import "./linklist.scss"
 
 const pages = [
   {
-    url: "/watch",
+    url: "https://youtube.com/playlist?list=PLQYT23Kt6xQkm3B-L8YTl1VGRKlOS6Fbk&si=W0-iqQvrzR372z6A",
     title: "Watch",
+    isExternal: true
   },
   {
-    url: "/listen",
+    url: "https://ffm.to/y6w6qm0",
     title: "Listen",
+    isExternal: true,
   },
   {
-    url: "/shows",
-    title: "Shows",
+    url: "https://www.eventbrite.de/e/halloween-at-new-fears-tickets-1864790882729?aff=ebdssbcategorybrowse",
+    title: "Events",
+    isExternal: true
   },
   {
     url: "/about",
@@ -21,8 +24,8 @@ const pages = [
   },
   {
     url: "https://leonthesinger.bandcamp.com",
-    title: "Buy",
-    isExternal: true
+    title: "Merch",
+    isExternal: true,
   },
 ]
 

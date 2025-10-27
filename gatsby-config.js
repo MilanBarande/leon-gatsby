@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Leon's music`,
-    description: "This is the official website of the music artist Léon",
-    author: `@gatsbyjs`,
+    title: `Leon The Singer`,
+    description: "Official website of Léon The Singer",
+    author: `MilanBarande`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,19 +16,18 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Leon The Singer`,
+        short_name: `Leon The Singer`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
+        icon: `src/images/album-cover.jpeg`,
       },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    }
   ],
 }

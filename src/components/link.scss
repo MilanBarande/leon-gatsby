@@ -1,14 +1,12 @@
 .link {
-  font-size: 25px;
-  text-transform: uppercase;
-  letter-spacing: 12px;
-  color: #f9b4dd;
+  font-size: 1.5rem;
   text-decoration: none;
+  color: #CC1100;
 }
 
 @media only screen and (max-width: 800px) {
   .link {
-    font-size: 22px;
+    font-size: 1rem;
   }
 }
 
@@ -17,6 +15,7 @@
 }
 
 .home-link {
-  font-size: 30px;
+  margin-top: 20px;
+  font-size: 28px;
   letter-spacing: 20px;
 }

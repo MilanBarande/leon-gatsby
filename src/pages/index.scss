@@ -3,15 +3,14 @@
 }
 
 @font-face {
-  font-family: 'Futura italic';
-  src: url('../fonts/Futura\ Italic.ttf')
+  font-family: 'BlackJaguarDemoRegular';
+  src: url('../fonts/BlackJaguarDemoRegular.ttf')
 }
 
-// @media only screen and (min-height: 800px) {
-//   #album-cover {
-//     height: 60vh;
-//   }
-// }
+@font-face {
+  font-family: 'Zapfino';
+  src: url('../fonts/Zapfino.ttf')
+}
 
 @media only screen and (max-height: 700px) {
   #album-cover {

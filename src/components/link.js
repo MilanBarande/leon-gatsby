@@ -3,20 +3,13 @@ import React, { Component } from "react"
 import "./link.scss"
 
 const colors = [
-  "#69ff18",
-  "#4363cc",
-  "#fc3e2a",
-  "#feff05",
-  "#ff68a5",
-  "#9a8ed0",
-  "#d3f6cf",
-  "#06cee6",
-  "#494c39",
+  "#CC1100",
+  "black"
 ]
 
 class FunkyLink extends Component {
   state = {
-    color: "white",
+    color: "#CC1100",
   }
 
   spinTheColorWheel = () => {
@@ -28,7 +21,7 @@ class FunkyLink extends Component {
 
   stopTheWheel = () => {
     clearInterval(this.interval)
-    return this.setState({ color: "white" })
+    return this.setState({ color: "#CC1100" })
   }
 
   componentWillUnmount() {
@@ -43,7 +36,7 @@ class FunkyLink extends Component {
         style={{ color }}
         onMouseOver={this.spinTheColorWheel}
         onMouseLeave={this.stopTheWheel}
-        className='link' href="https://leonthesinger.bandcamp.com" target="_blank">{title}</a>
+        className='link' href={url} target="_blank">{title}</a>
       : (
         <Link
           to={url}

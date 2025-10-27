@@ -4,11 +4,9 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
-// You can delete this file if you're not using it
+import React from "react"
 
-const React = require("react")
-
-exports.onRenderBody = ({ setPostBodyComponents }) => {
+export const onRenderBody = ({ setPostBodyComponents }) => {
   setPostBodyComponents([
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>,
     <script src="https://widget.seated.com/app.js"></script>,
